@@ -92,5 +92,17 @@ for(int i = 0; i < words.size(); i++) {
    ht.insert(words[i], i +1);
 }
 cout << "Table capctiy:" << ht.getCapacity() << endl;
+cout << "Numberf of elements: " <<ht.size() << endl;
+cout << " Load factor: " << ht.loadFactor() << endl;
+cout << " Total collisions: " << ht.getCollisionCount() << endl;
+
+cout<< "search mango: " << ht.search("mango") << endl;
+
+cout << "search island:" <<ht.search("island") << endl;
+
+ht.remove ("tyla");
+cout<< "searh tyla after remove:" << ht.search("tyla) << endl;
+    return 0;
+    }
 
 
