@@ -70,3 +70,27 @@ for(const auto& bucket : oldTable) {
   }
 }
 
+//Part 5
+
+int main() {
+    HashTable ht;
+
+vector<string> words = {
+pomegrante","march","fourth","mango","alligatoer","koala","alpaca","camel","twentysix","redfox",
+        "adele","beyonce","doja","rihanna","wizkid","tems","tyla","ayrastarr","twentythree","coffee",
+        "tea","latte","mocha","espresso","cappuccino","macchiato","americano","milk","sugar","lion",
+        "tiger","zebra","giraffe","elephant","rhino","hippo","cheetah","leopard","hyena","apple",
+        "banana","orange","grape","peach","plum","kiwi","pear","melon","berry","sun",
+        "moon","star","planet","galaxy","comet","asteroid","orbit","space","rocket","table",
+        "chair","lamp","sofa","desk","bed","mirror","window","door","pillow","phone",
+        "laptop","keyboard","mouse","screen","speaker","charger","camera","tablet","router","river",
+        "ocean","lake","mountain","forest","desert","valley","island","beach","waterfall","doctor",
+        "teacher","student","artist","driver","chef","writer","dancer","singer","painter","tyla"
+};
+
+for(int i = 0; i < words.size(); i++) {
+   ht.insert(words[i], i +1);
+}
+cout << "Table capctiy:" << ht.getCapacity() << endl;
+
+
